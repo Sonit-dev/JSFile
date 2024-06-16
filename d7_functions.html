@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //funcyion is a block of code that performs specific task 
+        //function is reussablee for multiple values
+        //at the end of function name, we must have to add parentthesis i.e.()
+        //while naming function avoid special characters except(_), spaces,
+        //at the begining of function name, must start with alphabets
+
+        //function can be written as
+
+            //defining the function
+        //function demoFunction(){
+            //....code here....
+        // }
+
+            //calling the function
+        //demoFunction()
+
+        //defining the function sayHello()
+        function sayHello(){
+            console.log("Hello World")
+            document.write("Hello Nepal <br>")
+        }
+
+        //calling the function
+        sayHello()
+
+        //defining the function addNumber()
+        function addNumber(){
+            let a = 2, b = 2
+            sum = a + b
+            document.write(`The sum is ${sum}. <br>`)
+        }
+
+        //calling the function 
+        addNumber()
+
+        let c = Number(prompt("Enter the value of a"))
+        let d = Number(prompt("Enter the value of b"))
+        let su = c + d
+        document.write(`The sum is ${su}. <br>`)
+
+        //function with arguments
+        //----------------------------------------------------------
+
+        //defining the function sumNumber()
+        function sumNumber(e,f){
+            document.write(`The sum is ${e+f}`)
+        }
+
+        //calling the function
+        sumNumber(30,30)
+
+        //here 30 and 30 are arguments and e and f are parameters
+        
+    </script>
+</body>
+</html>
