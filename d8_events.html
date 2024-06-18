@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body>
+    
+    <!-- Events
+     -------------------
+     onclick => function works on single click
+     ondblclick => function works on double click
+     onmouseover => function works on hover
+     onmouseout => function works on removing hover
+     onkeyup => function works on key entered
+     onkeydown => function works on key pressed
+     onchange => function works on changing values 
+     -->
+
+     <h1 id="name"></h1>
+     <h1 id="add"></h1>
+     <h1 id="sch"></h1>
+     <h1 id="hob"></h1>
+     
+    <button onclick="showName()">Show Name</button> 
+    <button onmouseout="showAddress()">Show Address</button>
+    <button onmouseover="showSchool()">Show School</button>
+    <button ondblclick="showHobby()">Show Hobby</button>
+    <script>
+        //notification
+        //alert("Hello, My name is Sonyal.")
+        let name = "Sonyal"
+        function showName(){  
+            document.getElementById('name').innerHTML="Sonyal"
+        }
+
+        let add = "Sanagaun"
+        function showAddress(){  
+            document.getElementById('add').innerHTML="Sanagaun"
+        }
+
+        let sch = "MOSS"
+        function showSchool(){  
+            document.getElementById('sch').innerHTML="Mount Olive Secondary School"
+        }
+
+        let hob = "Game"
+        function showHobby(){  
+            document.getElementById('hob').innerHTML="Gaming"
+        }
+
+    </script>
+</body>
+</html>
