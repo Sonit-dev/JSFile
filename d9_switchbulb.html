@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Bulb</title>
+</head>
+<body>
+    
+    <img src="./Images/off.png" alt="" width="400px" height="500px" onmouseover="switchon()" onmouseout="switchoff()">
+    <br>
+    <button onclick="switchon()">Switch ON</button>
+    <button onclick="switchoff()">Switch OFF</button>
+
+    <script>
+        function switchon(){
+            document.querySelector('img').src = "./Images/on.png"
+        }
+        
+        function switchoff(){
+            document.querySelector('img').src = "./Images/off.png"
+        }
+    </script>
+</body>
+</html>

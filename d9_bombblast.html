@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bombblast</title>
+</head>
+<body>
+
+    <img src="./Images/bomb.png" alt="" width="500px" height="500px"  onmouseover="bomb()" onmouseout="blast()">
+    <br>
+    <button onclick="bomb()">bomb</button>
+    <button onclick="blast()">blast</button>
+
+    <script>
+        function bomb(){
+            document.querySelector('img').src = "./Images/bomb.png"
+        }
+        function blast(){
+             document.querySelector('img').src = "./Images/blast.png"
+        }
+    </script>
+    
+</body>
+</html>
