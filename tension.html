@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ten son</title>
+</head>
+<body>
+    
+    <button onclick="button()">Button</button>
+
+    <p id="para" onclick="p()">Hi</p>
+
+    
+    <script>
+        //1
+        let f = "Sonit"
+        let l = "Mhzrn"
+        let name = `${f} ` + `${l}`
+        document.write(`${name}`)
+
+        document.write(`<br>`)
+
+        //2
+        let n1 = Number(prompt("Enter first number"))
+        let n2 = Number(prompt("Enter second number"))
+        document.write(`${n1+n2}`)
+
+        document.write(`<br>`)
+
+        //3
+        let q = Number(prompt("Enter any number."))
+       if(q>0){
+        document.write("Number is Postive.")
+        }
+        else if(q == 0){
+            document.write("Number is Zero.")
+        }
+        else{
+            document.write("Number is Negative.")
+        }
+
+        document.write(`<br>`)
+
+        //4
+        function button(){
+            alert("Button is clicked!")
+        }
+
+        document.write(`<br>`)
+
+        //5
+        function p(){
+        document.getElementById("para").innerHTML="Hello, World."
+        }
+
+        //6
+        let sum = 0
+        n = Number(prompt("Enter value for n"))
+        for(i=1;i<=n;i++){
+            sum+=i
+        }
+        document.write(`${sum}`)
+    </script>
+    
+</body>
+</html>
