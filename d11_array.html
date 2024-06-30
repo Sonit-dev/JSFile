@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+
+    <script>
+        let ar = ['Ram','Sita','Gita',20]
+        document.write(`${ar} <br>`)
+        document.write(`${ar[2]} <br>`)
+        document.write(`${ar[3]} <br>`)
+        document.write(`<hr>`)
+
+        // length, push, pop, shift, unshift, splice, sort, reverse
+
+        // length => to count the element's length
+        let fruits = ['Apple','Banana','Mango']
+        document.write(`${fruits} <br>`)
+        document.write(`${fruits.length} <br>`)
+
+        // push => to add element at last position
+        fruits.push('Orange')
+        document.write(`${fruits} <br>`)
+
+        // pop => to remove element from last position
+        fruits.pop( )
+        document.write(`${fruits} <br>`)
+
+        // shift => to remove element from first position
+        fruits.shift()
+        document.write(`${fruits} <br>`)
+
+        // unshift => to add element at first position
+        fruits.unshift('Dragonfruit')
+        document.write(`${fruits} <br>`)
+
+        // splice => to add/remove elemen at any specific position
+        fruits.splice(1,0,'Blueberry')
+        document.write(`${fruits} <br>`)
+
+        fruits.splice(2,1,'Papaya')
+        document.write(`${fruits} <br>`)
+
+        // sort => arrange the element in alphabetically order
+        fruits.sort()
+        document.write(`${fruits} <br>`)
+
+        // reverse => to reverse the element
+        fruits.reverse()
+        document.write(`${fruits} <br>`)
+        
+    </script>
+</body>
+</html>
